@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="281dp"
+        android:background="#BB024D"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="85dp"
+            android:contentDescription="user"
+            app:srcCompat="@drawable/wuser" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="255dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="-145dp"
+            android:text="Edit Profile"
+            android:textAlignment="center"
+            android:textColor="#C2B1B1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="@id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="-85dp"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Change your profile picture"
+            android:textAlignment="center"
+            android:textColor="#FACCC6C6"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="378dp"
+        android:layout_height="50dp"
+        android:background="#59C7C0C0"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Profile"
+            android:textColor="#F31D1C1C"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="383dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginTop="-10dp"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:padding="20"
+            android:paddingLeft="0"
+            android:text="Lance Bogrol"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="50dp"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:padding="20"
+            android:paddingLeft="0"
+            android:text="lancebogrol"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="110dp"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:padding="20"
+            android:paddingLeft="0"
+            android:text="http//lncebogroldomain.co//"
+            android:textAlignment="viewStart" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="61dp"
+            app:srcCompat="@drawable/username" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginBottom="18dp"
+            app:srcCompat="@drawable/sheet" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/user" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="226dp"
+        android:background="#59C7C0C0"
+        android:outlineAmbientShadowColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Calssified information"
+            android:textColor="#F31D1C1C"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="391dp"
+        android:layout_height="229dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="6dp"
+            android:background="#BB024D"
+            android:gravity="center"
+            android:text="Done"
+            android:textColor="#E6DFE2" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-12dp"
+            android:layout_marginBottom="170dp"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:padding="20"
+            android:text="lance@lancedomain.com"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-10dp"
+            android:layout_marginBottom="113dp"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:padding="20"
+            android:text="+970123456789"
+            android:textAlignment="textStart" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginBottom="56dp"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:padding="20"
+            android:text="Female"
+            android:textAlignment="textStart" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="179dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/email" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            app:srcCompat="@drawable/pphone" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
